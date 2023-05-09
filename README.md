@@ -12,17 +12,17 @@ https://www.youtube.com/watch?v=92WHN-pAFCs
 <br>Alan Turing probó la existencia de problemas indecibles en 1936 al encontrar un ejemplo, el hoy en día famoso "problema de parar":<br>
 Basado en su código y una entrada, ¿terminará de ejecutar un programa en particular?<br>
 Por ejemplo, considera este programa que cuenta hacia abajo:<br>
-<br>num ← 10
-REPEAT UNTIL (num = 0) {
-  DISPLAY(num)
-  num ← num - 1
+<br>num ← 10<br>
+REPEAT UNTIL (num = 0) {<br>
+  DISPLAY(num)<br>
+  num ← num - 1<br>
 }<br>
 <br>Ese programa parará, puesto que num finalmente llega a 0.<br>
 Compara ese con este programa que cuenta hacia arriba:<br>
-<br>num ← 1
-REPEAT UNTIL (num = 0) {
-  DISPLAY(num)
-  num ← num + 1
+<br>num ← 1<br>
+REPEAT UNTIL (num = 0) {<br>
+  DISPLAY(num)<br>
+  num ← num + 1<br>
 }<br>
 <br>Cuenta hacia arriba por siempre, puesto que num nunca será igual a 0.<br>
 Hay algoritmos que pueden predecir correctamente que el primer programa para y el segundo no lo hace. Estos son programas sencillos que no cambian con base en entradas diferentes.<br>
