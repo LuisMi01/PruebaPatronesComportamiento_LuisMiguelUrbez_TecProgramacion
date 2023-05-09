@@ -31,3 +31,13 @@ Para probar que dicho algoritmo no puede existir, Turing usó una "prueba por co
 Comenzamos por imaginar que si existe un algoritmo que determina si un programa para.<br>
 Luego proponemos un programa llamado HaltChecker que toma dos entradas, el código de un programa y la entrada para ese programa. A continuación usamos ese algoritmo hipotético de parar que retorna "para" o "nunca".<br>
 El siguiente diagrama de flujo visualiza a HaltChecker:<br>
+
+![Imagen numero 1](./imagenes/Imagen1.png)
+
+
+
+
+
+
+
+
