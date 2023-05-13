@@ -2,6 +2,30 @@
 
 ## Repositorio del trabajo: https://github.com/LuisMi01/PruebaPatronesComportamiento_LuisMiguelUrbez_TecProgramacion/tree/main
 
+### Posible estructuracion:
+com.tuproyecto.programa
+├── Programa
+└── CodigoFuente
+
+com.tuproyecto.teoremaparada
+├── TeoremaParada
+├── EstrategiaDetectarBucles
+│   ├── EstrategiaSimple
+│   ├── EstrategiaCompleja
+│   └── EstrategiaHeuristica
+├── ResultadoEjecucion
+└── TipoResultadoEjecucion
+
+com.tuproyecto.utilidades
+├── LectorArchivos
+└── AnalizadorSintaxis
+
+com.tuproyecto.tests
+├── TestTeoremaParada
+├── TestEstrategiaDetectarBucles
+└── TestUtilidades
+
+
 ## Ejercicios a realizar:
 
 Realiza en código Java lo que describe el siguiente video:
