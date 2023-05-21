@@ -2,29 +2,6 @@
 
 ## Repositorio del trabajo: https://github.com/LuisMi01/PruebaPatronesComportamiento_LuisMiguelUrbez_TecProgramacion/tree/main
 
-### Posible estructuracion:
-com.tuproyecto.programa<br>
-├── Programa<br>
-└── CodigoFuente<br>
-<br>
-com.tuproyecto.teoremaparada<br>
-├── TeoremaParada<br>
-├── EstrategiaDetectarBucles<br>
-│   ├── EstrategiaSimple<br>
-│   ├── EstrategiaCompleja<br>
-│   └── EstrategiaHeuristica<br>
-├── ResultadoEjecucion<br>
-└── TipoResultadoEjecucion<br>
-<br>
-com.tuproyecto.utilidades<br>
-├── LectorArchivos<br>
-└── AnalizadorSintaxis<br>
-<br>
-com.tuproyecto.tests<br>
-├── TestTeoremaParada<br>
-├── TestEstrategiaDetectarBucles<br>
-└── TestUtilidades<br>
-<br>
 
 ## Ejercicios a realizar:
 
