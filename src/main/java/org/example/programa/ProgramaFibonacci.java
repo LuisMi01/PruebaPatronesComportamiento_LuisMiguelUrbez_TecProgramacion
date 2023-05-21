@@ -19,17 +19,14 @@ public class ProgramaFibonacci extends Programa{
 
     @Override
     protected void ejecutarPrograma(){
-        System.out.println("Ejecutando programa Fibonacci");
-        int a = 0;
-        int b = 1;
-        int c = 0;
-        while (c < limite) {
-            c = a + b;
-            a = b;
-            b = c;
-            System.out.println(c);
-        }
+        int limite = 1;
+
+        do {
+            System.out.println(limite);
+            limite++;
+        } while (limite != 0);
     }
+
 
     @Override
     protected void accionBucleInfinito(){
