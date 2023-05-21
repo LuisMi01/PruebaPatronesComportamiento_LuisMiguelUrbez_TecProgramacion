@@ -10,7 +10,6 @@ public class ProgramaFibonacci extends Programa{
     @Override
     protected void cargarCodigo(){
         System.out.println("Cargando código del programa Fibonacci");
-
     }
 
     @Override

@@ -9,7 +9,7 @@ public class ProgramaFactorial extends Programa {
     }
 
     @Override
-    protected void cargarCodigo() {
+    protected void cargarCodigo(){
         // Implementación específica para cargar el código del programa factorial
     }
 
