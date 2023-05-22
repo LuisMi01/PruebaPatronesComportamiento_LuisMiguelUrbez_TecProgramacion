@@ -2,6 +2,21 @@
 
 ## Repositorio del trabajo: https://github.com/LuisMi01/PruebaPatronesComportamiento_LuisMiguelUrbez_TecProgramacion/tree/main
 
+## Ejecucion:
+En el proyecto realizado, se ha trabajado con varios patrones de diseño para mejorar la modularidad y extensibilidad del código. A continuación, se presenta un resumen explicativo de los patrones utilizados:
+
+Patrón Abstract Factory:
+Se ha implementado la interfaz FabricaProgramas como una Abstract Factory para crear instancias de diferentes tipos de programas. Se han creado dos fábricas concretas: FabricaProgramaInfinito y FabricaProgramaTermina, que proporcionan implementaciones específicas de los programas infinitos y terminados, respectivamente. Este patrón permite crear objetos relacionados sin exponer detalles de implementación y facilita la creación de nuevas variantes de programas en el futuro.
+Patrón Template:
+Se ha utilizado el patrón Template para definir una estructura común para los programas, donde las subclases (ProgramaInfinito y ProgramaTermina) implementan ciertos métodos específicos según sus necesidades. La clase abstracta Programa define el flujo general de ejecución y deja los detalles específicos para las subclases. Esto promueve la reutilización del código y permite agregar fácilmente nuevos tipos de programas al sistema.
+Patrón Observer:
+Se ha implementado el patrón Observer para notificar a los observadores sobre eventos específicos que ocurren en los programas. La clase SujetoObservable actúa como un sujeto observable y mantiene una lista de observadores registrados. Los observadores implementan la interfaz Observador y se registran en el sujeto observable para recibir notificaciones. En este caso, se tienen dos observadores concretos: ObservadorBucleInfinito y ObservadorTerminacion, que son notificados cuando un programa se ejecuta en un bucle infinito o termina correctamente, respectivamente. Este patrón permite una comunicación desacoplada entre el sujeto observable y los observadores, lo que facilita la extensibilidad y la adición de nuevos observadores en el futuro.
+Patrón Strategy (Negation):
+Se ha implementado una estrategia de negación utilizando el patrón Strategy. La interfaz Negacion define la operación negarResultado, que toma un programa como entrada y devuelve el resultado negado. La clase Negar implementa esta interfaz y proporciona la lógica para negar el resultado de un programa. Este patrón permite encapsular diferentes estrategias de negación y cambiarlas dinámicamente según sea necesario.
+En resumen, el proyecto ha utilizado los patrones de diseño Abstract Factory, Template, Observer y Strategy para mejorar la modularidad, la reutilización del código y la extensibilidad del sistema. Estos patrones permiten una mejor organización del código, una fácil incorporación de nuevas funcionalidades y una comunicación flexible entre los componentes del sistema.
+
+## Diagrama de clases:
+<img src="https://www.plantuml.com/plantuml/svg/pLN1QXj13BtFLuYS788DlHfJGaCBWP8MqcCksbbvcJ2hCP8caARzc7vBVwpiRkoPPcE8RxdPJ-z9UXgXlLH3iTn7vm8RoHOzmHTi97ZyBgaJx57XoG5SU26KFNRDsy31qk9y3I-n6Va7IHyO2_S0kT_E-OYgTSqwrwcbNyrNwi7JYSsLeTnGXpuadb8mTIWB8StHi4rhQ5AAX7n--5LQ6PHoYgmK_TOeoGEswLcFtZB6y1DbwFSXXRQKATnFsKSg4toxS39UR1wHOQCcw0qc_NviesJfKnkwj8PRay3TW12RO8iLTE5HEfIhaNh8FE29jw7BWl9v4jL1kYUVhRnS7KC_DFsVyNcuiZUVmgkRjuoX3qRNHZBAIDSGsDwvXNhPbvnxalIUsxxDzsJfUGkRI5FVwR2Lmz2_1hLDMTIFO-fEg4CfwA9erb3WsiZmddoQXfE5RV2rYBHsCJkNcr-hrR63zXPskK3xepEHXd_Yzfm9c-MVX-k4nSCKFt8qZlFg6-5cBxTPBYkgSvoCuEmgefB28mZ5KKWA6lfT7EVQejxn3WL1Q2Uan8O24O7K97lBWj3y_QF1unr3In5saXx9MrgT0IhSV73kahWTFsB_0000">
 
 ## Ejercicios a realizar:
 
