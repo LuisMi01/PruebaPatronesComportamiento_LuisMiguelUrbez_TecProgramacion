@@ -12,7 +12,7 @@ public class ObservadorTerminacion implements Observador {
 
     @Override
     public void actualizarInfinito() {
-        System.out.println(".");
+        System.out.println("true");
     }
 
     @Override

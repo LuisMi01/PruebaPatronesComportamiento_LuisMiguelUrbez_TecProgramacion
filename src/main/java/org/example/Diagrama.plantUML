@@ -1,0 +1,82 @@
+@startuml
+
+interface FabricaProgramas {
+  +crearProgramaInfinito(): ProgramaInfinito
+  +crearProgramaTermina(): ProgramaTermina
+}
+
+class FabricaProgramaInfinito {
+  +crearProgramaInfinito(): ProgramaInfinito
+}
+
+class FabricaProgramaTermina {
+  +crearProgramaTermina(): ProgramaTermina
+}
+
+interface Negacion {
+  +negar(resultado: boolean): boolean
+}
+
+class Negar {
+  +negar(resultado: boolean): boolean
+}
+
+interface Observador {
+  +actualizar(): void
+}
+
+class ObservadorBucleInfinito {
+  +actualizar(): void
+}
+
+class ObservadorTerminacion {
+  +actualizar(): void
+}
+
+abstract class Programa {
+  -codigo: String
+  -entrada: String
+  +cargarCodigo(): void
+  +configurarEntrada(): void
+  +ejecutarPrograma(): void
+  +accionBucleInfinito(): void
+  +accionTerminacion(): void
+}
+
+class ProgramaInfinito {
+  -limiteIteraciones: int
+  +cargarCodigo(): void
+  +configurarEntrada(): void
+  +ejecutarPrograma(): void
+  +accionBucleInfinito(): void
+  +accionTerminacion(): void
+}
+
+class ProgramaTermina {
+  -numero: int
+  +cargarCodigo(): void
+  +configurarEntrada(): void
+  +ejecutarPrograma(): void
+  +accionBucleInfinito(): void
+  +accionTerminacion(): void
+}
+
+class SujetoObservable {
+  -observadores: List<Observador>
+  +agregarObservador(observador: Observador): void
+  +eliminarObservador(observador: Observador): void
+  +notificarObservadores(): void
+}
+
+FabricaProgramas <|.. FabricaProgramaInfinito
+FabricaProgramas <|.. FabricaProgramaTermina
+Negacion <|.. Negar
+Programa <|.. ProgramaInfinito
+Programa <|.. ProgramaTermina
+Observador <|.. ObservadorBucleInfinito
+Observador <|.. ObservadorTerminacion
+SujetoObservable <-- Observador
+
+note "Clases y relaciones simplificadas\npara representar la estructura básica\n del proyecto." as N1
+
+@enduml

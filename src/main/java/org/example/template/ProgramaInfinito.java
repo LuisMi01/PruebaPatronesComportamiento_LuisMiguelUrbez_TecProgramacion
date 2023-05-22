@@ -1,6 +1,4 @@
 package org.example.template;
-
-
 import org.example.observer.observable.SujetoObservable;
 
 import java.util.Scanner;
@@ -30,7 +28,7 @@ public class ProgramaInfinito extends Programa {
         int numero = 1;
         boolean bucleInfinito = false;
 
-        for (int i = 0; i < limiteIteraciones; i++) {
+        for (int i = 0; i <= limiteIteraciones; i++) {
             System.out.println(numero);
             numero++;
 
@@ -44,4 +42,5 @@ public class ProgramaInfinito extends Programa {
             sujetoObservable.notificarObservadores(false);
         }
     }
+
 }

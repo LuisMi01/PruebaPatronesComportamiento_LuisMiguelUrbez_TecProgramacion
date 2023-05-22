@@ -11,7 +11,7 @@ public class ObservadorBucleInfinito implements Observador{
         }
 
         public void actualizarTerminado() {
-                System.out.println(".");
+                System.out.println("false");
         }
         @Override
         public void actualizarInfinito() {

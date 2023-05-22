@@ -15,10 +15,15 @@ public class SujetoObservable {
     }
 
     public void notificarObservadores(boolean terminado) {
+        //si es true, se notifica a los observadores de terminacion si es false, se notifica a los observadores de bucle infinito
         if (terminado) {
-            observadores.forEach(Observador::actualizarTerminado);
+            for (Observador observador : observadores) {
+                observador.actualizarTerminado();
+            }
         } else {
-            observadores.forEach(Observador::actualizarInfinito);
+            for (Observador observador : observadores) {
+                observador.actualizarInfinito();
+            }
         }
     }
 }

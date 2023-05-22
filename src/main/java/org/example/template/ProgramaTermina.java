@@ -1,7 +1,6 @@
 package org.example.template;
 
 import org.example.observer.observable.SujetoObservable;
-import org.example.observer.observador.ObservadorTerminacion;
 
 import java.util.Scanner;
 
